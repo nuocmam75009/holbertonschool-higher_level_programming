@@ -9,10 +9,10 @@ str4 = "and is 0"
 str5 = "and is less than 6 and not 0"
 
 if last_digit > 5:
-    print(f"{str1} {number} {str2} {last_digit} {str3}")
+    print(f"{str1} {number} {str2} {last_digit} {str3}\n")
 
 elif last_digit == 0:
-    print(f"{str1} {number} {str2} {last_digit} {str4}")
+    print(f"{str1} {number} {str2} {last_digit} {str4}\n")
 
 elif last_digit < 6 and last_digit != 0:
-    print(f"{str1} {number} {str2} {last_digit} {str5}")
+    print(f"{str1} {number} {str2} {last_digit} {str5}\n")
