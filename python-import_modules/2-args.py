@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 import sys
 
+
 def print_args(args):
+
     num_args = len(args)
     if num_args == 0:
         print("0 arguments.")
@@ -13,5 +15,7 @@ def print_args(args):
         for i, arg in enumerate(args, start=1):
             print(f"{i}: {arg}")
 
+
 if __name__ == "__main__":
+
     print_args(sys.argv[1:])
