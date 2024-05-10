@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 import sys
 
-if __name__ == "__main__":
+def add_all_args(args):
+    return sum(int(arg) for arg in args)
 
-    result = 0
-    for arg in range(1, len(sys.argv)):
-        result += int(sys.argv[arg])
-    print("{}".format(result))
+if __name__ == "__main__":
+    print(add_all_args(sys.argv[1:]))
