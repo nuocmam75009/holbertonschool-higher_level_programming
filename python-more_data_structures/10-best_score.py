@@ -4,4 +4,4 @@ def best_score(a_dictionary):
         return None
     else:
         return max(a_dictionary, key=a_dictionary.get)
-#utilise max pour avoir la valeur max
+# utilise max pour avoir la valeur max
