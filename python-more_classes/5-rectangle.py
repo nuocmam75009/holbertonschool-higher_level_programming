@@ -84,6 +84,6 @@ class Rectangle:
         """return string repr of rectangle"""
         return f"Rectangle({self.__width}, {self.__height})"
 
-    def __del___(self):
+    def __del__(self):
         """prints bye rect when one is deleted"""
         print("Bye rectangle...")
