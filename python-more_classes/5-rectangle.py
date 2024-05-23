@@ -86,4 +86,4 @@ class Rectangle:
 
     def __del___(self):
         """prints bye rect when one is deleted"""
-        print("Bye rectangle ...")
+        print("Bye rectangle...")
