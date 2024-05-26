@@ -111,6 +111,6 @@ class Rectangle:
             return rect_2
 
     @classmethod
-    def square(cls, size = 0):
+    def square(cls, size=0):
         """creates a new rectangle"""
         return cls(size, size)
