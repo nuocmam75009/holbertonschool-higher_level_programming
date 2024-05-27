@@ -5,7 +5,7 @@
 import json
 
 
-def from_json_to_obj(my_str):
+def from_json_string(my_str):
     """
     Function that converts a JSON str to obj
     my_str: JSON string
