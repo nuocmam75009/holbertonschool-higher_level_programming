@@ -15,7 +15,7 @@ class Student:
         retrieves a dict repr of Student
         attrs: list of strings, only attribute names
         """
-        if attrs == None:
+        if attrs is None:
             return self.__dict
         else:
             return {key: value for key, value in self.__dict__.items()
