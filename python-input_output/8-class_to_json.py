@@ -8,5 +8,5 @@ def class_to_json(obj):
     obj: instance of class
     """
 
-    if isinstance(obj, str | int | bool | list | dict):
+    if isinstance(obj, (str, int, bool, list, dict)):
         return {key: value for key, value in obj.__dict__.items()}
