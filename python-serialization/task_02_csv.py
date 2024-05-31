@@ -7,6 +7,9 @@ import json
 
 
 def convert_csv_to_json(csv_filename):
+    """This function converts a csv file to json
+    encodes in utf-8
+    """
     try:
         with open(csv_filename, 'r', encoding="utf-8") as csvf:
             csvReader = csv.DictReader(csvf)
