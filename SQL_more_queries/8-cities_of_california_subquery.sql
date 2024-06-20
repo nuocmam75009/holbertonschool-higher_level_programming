@@ -3,10 +3,9 @@
 -- but the id can be different.
 -- results in ASC order by cities.id
 SELECT
-    id, name
+    `id`, `name`
 FROM
-    cities
+    `cities`
 WHERE
-    state_id
-    IN = (SELECT id FROM states WHERE name = 'California')
-ORDER BY id ASC;
+    `state_id` IN = (SELECT `id` FROM `states` WHERE name = 'California')
+ORDER BY `id` ASC;
