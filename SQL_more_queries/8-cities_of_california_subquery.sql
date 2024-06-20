@@ -2,8 +2,7 @@
 -- list cities of california means ones that have name = 'cali'
 -- but the id can be different.
 -- results in ASC order by cities.id
-USE
-    `hbtn_0d_usa`;
+USE hbtn_0d_usa;
 SELECT
     `name`
 FROM
