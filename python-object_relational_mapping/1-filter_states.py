@@ -1,7 +1,5 @@
 import MySQLdb
 import sys
-# cur is cursor
-#
 
 if __name__ == "__main__":
     db = MySQLdb.connect(
@@ -12,11 +10,12 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
     cur = db.cursor()
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    cur.execute("SELECT * FROM states ORDER BY states.id ASC")
     states = cur.fetchall()
 
-    for state in states:
-        print(state)
+    for state in states():
+        if state[1][0] == 'N':
+            print(state)
 
     cur.close()
     db.close()
