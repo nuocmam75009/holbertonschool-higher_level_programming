@@ -3,7 +3,7 @@
 -- but the id can be different.
 -- results in ASC order by cities.id
 SELECT
-    `id`, `name`
+    `name`
 FROM
     `cities`
 WHERE
