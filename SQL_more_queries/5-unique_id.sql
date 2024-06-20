@@ -1,6 +1,5 @@
 -- Create table unique_id hihihihihihihihihohohohohohohohohohoh)ergpeqf^pqfks
 CREATE TABLE IF NOT EXISTS unique_id (
-    id INT NOT NULL AUTO_INCREMENT DEFAULT 1,
+    id INT  DEFAULT 1 UNIQUE,
     name VARCHAR(256),
-    PRIMARY KEY (id)
 );
