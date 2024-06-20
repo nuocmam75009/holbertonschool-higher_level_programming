@@ -3,6 +3,7 @@
 -- Use INNER JOIN: retrieves data between tables when there's a match
 -- Should display title - genre.id both in ASC order
 SELECT tv_shows.title, tv_show_genres.genre_id
-FROM hbtn_0d_tvshows.tv_shows
-JOIN hbtn_0d_tvshows.tv_show_genres ON tv_shows.id = tv_show_genres.tv_show_id
+FROM tv_shows
+JOIN tv_show_genres
+ON tv_show_genres.show_id = tv_shows.id
 ORDER BY tv_shows.title, tv_show_genres.genre_id;
