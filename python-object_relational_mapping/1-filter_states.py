@@ -1,5 +1,6 @@
 import MySQLdb
 import sys
+# Lists states starting with 'N' from DB hbtn
 
 if __name__ == "__main__":
     db = MySQLdb.connect(
