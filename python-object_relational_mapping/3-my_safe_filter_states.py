@@ -1,9 +1,12 @@
 #!/usr/bin/python3
+"""
+        Lists states where name matches arg
+        Sys.Args: username, password, db, state
+        Safe from SQL injection -> not in SQL query
+# """
 import MySQLdb
 import sys
-# Lists states where name matches arg
-# Sys.Args: username, password, db, state
-# Safe from SQL injection -> not in SQL query
+
 
 if __name__ == "__main__":
     db = MySQLdb.connect(

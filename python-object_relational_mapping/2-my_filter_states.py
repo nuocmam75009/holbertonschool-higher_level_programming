@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+"""
+        Lists states where name matches arg
+        Sys.Args: username, password, db, state
+"""
 import MySQLdb
 import sys
-# Lists states where name matches arg
-# Sys.Args: username, password, db, state
+
 
 if __name__ == "__main__":
     db = MySQLdb.connect(

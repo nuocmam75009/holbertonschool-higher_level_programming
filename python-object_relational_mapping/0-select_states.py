@@ -1,7 +1,12 @@
 #!/usr/bin/python3
+
+"""
+        Script that selects all states
+
+"""
 import MySQLdb
 import sys
-# Script that selects all states
+
 
 if __name__ == "__main__":
     db = MySQLdb.connect(
