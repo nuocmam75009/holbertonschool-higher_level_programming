@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import MySQLdb
 import sys
 # Lists states starting with 'N' from DB hbtn
@@ -12,11 +13,11 @@ if __name__ == "__main__":
     )
     cur = db.cursor()
     cur.execute("SELECT * FROM states ORDER BY states.id ASC")
-    states = cur.fetchall()
+    query_rows = cur.fetchall()
 
-    for state in states():
-        if state[1][0] == 'N':
-            print(state)
+    for row in query_rows:
+        if row[1][0] == 'N':
+            print(row)
 
     cur.close()
     db.close()
