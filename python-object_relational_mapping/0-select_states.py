@@ -1,7 +1,6 @@
 import MySQLdb
 import sys
-# cur is cursor
-#
+# Script that selects all states
 
 if __name__ == "__main__":
     db = MySQLdb.connect(
