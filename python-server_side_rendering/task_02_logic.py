@@ -3,25 +3,14 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/index')
-def index():
-    return render_template('index.html')
-
-@app.route('/about')
-def about():
-    return render_template('about.html')
-
-@app.route('/contact')
-def contact():
-    return render_template('contact.html')
-
 @app.route('/items')
 def items():
+    # Load items from items.json
     with open('items.json') as f:
         data = json.load(f)
-        items_list = data.get('items', [])
 
-        return render_template('items.html', items=items_list)
+    # Pass the list of items to the template
+    return render_template('items.html', items=data['items'])
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True) 
